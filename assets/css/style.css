@@ -1,0 +1,55 @@
+:root{
+    --ays-primary : #27BCE8;
+    --ays-primary-light : #9EDCF9; 
+    --ays-primary-dark : #1E9CC5; 
+    --ays-secondary : #E92173; 
+    --ays-secondary-light : #F2749A; 
+    --ays-secondary-dark : #B62273; 
+    --ays-gray : #BCBEC0; 
+    --ays-gray-light : #E6E7E8; 
+    --ays-gray-dark : #6D6E71; 
+    /* --ays-title: 'Fira Code', monospace; */
+    --ays-title:'Raleway', sans-serif ;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+}
+h3{
+    font-family: var(--ays-title);
+    color: var(--ays-gray-dark);
+    font-weight: bold;
+}
+h3::first-letter{
+    color: var(--ays-primary);
+}
+h5{
+    color: var(--ays-primary-dark);
+}
+header a span{
+    color: var(--ays-secondary);
+    font-size: large;
+    font-weight: bolder;
+}
+.text-primary{
+    color: var(--ays-primary-dark);
+}
+.btn-primary{
+    background-color: var(--ays-primary);
+    border:1px solid var(--ays-primary);
+}
+.btn-primary:hover{
+    background-color: var(--ays-primary-dark);
+    border: 1px solid var(--ays-primary-dark);
+}
+.btn-outline-primary{
+    border:1px solid var(--ays-primary);
+    color: var(--ays-primary);
+}
+
+.testimonials{
+    background-color: var(--ays-primary-dark);
+}
+.nav-link:hover{
+    color: var(--ays-primary-light);
+}

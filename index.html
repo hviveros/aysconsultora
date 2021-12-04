@@ -5,35 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>A y S Consultora</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- custom fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+	<!-- custom css -->
+	<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 	<!-- header -->
-	<section id="header-nav">
-		<header class="d-flex flex-wrap fixed-top bg-light justify-content-center py-3 mb-4 container">
+	<nav id="header-nav">
+		<header class="d-flex flex-wrap fixed-top bg-white justify-content-center py-3 mb-4 container">
 			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 				<img src="assets/img/logo-icon-AS1.png" alt="logo icono AyS" width="40" height="32">
-				<span class="fs-4">AyS Consultora</span>
+				<span>AyS Consultora</span>
 			</a>
 
 			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="#" class="nav-link" aria-current="page">Inicio</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+				<li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+				<li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+				<li class="nav-item"><a href="#clientes" class="nav-link">Clientes</a></li>
+				<li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
 			</ul>
 		</header>
-	</section>
+	</nav>
 	<!-- hero -->
-	<main id="encabezado">
+	<main id="inicio">
 		<div class="px-4 py-5 my-5 text-center">
 			<img class="d-block mx-auto mb-4" src="assets/img/logo-AS1.png" alt="logo AyS" width="210" height="120">
-			<!-- <h1 class="display-5 fw-bold">Centered hero</h1> -->
 			<div class="col-lg-6 mx-auto">
 				<p class="mb-4">En el año 1995 Ciudad del Este - Paraguay, nace A y S Consultora, un equipo de profesionales con formación académica contable, administrativa, auditoría y comercial, organizaciones contables, industriales, agrícolas y comerciales de notoria trayectoria.</p>
 				<p class="mb-4">Nuestro objetivo es brindar soluciones de negocios viables y agregar valor a sus clientes en las áreas de su competencia profesional. Lograr el éxito con quienes nos eligen como socios comerciales.</p>
 				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-				<button type="button" class="btn btn-primary btn-lg px-4 gap-3">Servicios</button>
-				<button type="button" class="btn btn-outline-secondary btn-lg px-4">Contáctenos</button>
+				<a href="#servicios" class="btn btn-primary btn-lg px-4 gap-3">Servicios</a>
+				<a href="#contacto" class="btn btn-outline-primary btn-lg px-4">Contáctenos</a>
 				</div>
 			</div>
 		</div>
@@ -41,157 +46,139 @@
 
 	<!-- services -->
 	<section id="servicios" class="container py-5">
-		<h2 class="pb-2 border-bottom">Servicios</h2>
-		<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-			<div class="col card h-100 border-0 p-1">
+		<h2 class="py-5 text-center">Servicios</h2>
+		<div class="row g-4 row-cols-1 row-cols-lg-3 text-justify">
+			<div class="col card h-100 border-0 p-2">
 				<img src="assets/img/servicios-1.jpg" class="card-img-top figure-img img-fluid" alt="...">
 				<div class="card-body">
-					<h5 class="card-title">Apertura de Negocios</h5>
+					<h5 class="card-title fw-bold">Apertura de Negocios</h5>
 					<p class="card-text">Para abrir un nuevo negocio unipersonal se necesitan las siguientes inscripciones:Un RUC (Registro Único de Contribuyente) que otorga el Ministerio de Hacienda, Una Matrícula del Comerciante (empresa unipersonal), Libros de Contabilidad, Patente Comercial</p>
 					<p>Le acompañamos en cada uno de estos pasos con asesoramiento contable</p>
-				</div>
-				<div class="card-footer">
-					<a href="#" class="btn btn-outline-primary">
-						Contactenos
-					</a>
+					<a href="#contacto" class="btn btn-outline-primary btn-sm">Contáctenos	</a>
 				</div>
 			</div>
-			<div class="col card border-0 p-1">
+			<div class="col card h-100 border-0 p-2">
 				<img src="assets/img/servicios-2.jpg" class="card-img-top figure-img img-fluid" alt="...">
 				<div class="card-body">
-					<h5 class="card-title">Actualización Contable</h5>
+					<h5 class="card-title fw-bold">Actualización Contable</h5>
 					<p class="card-text">Analizar la información contable para la toma de decisiones constituye una herramienta principal para conocer la situación económica financiera de la empresa, todo debidamente actualizado con los últimos cambios tributarios y normativos a la fecha.</p>
-				</div>
-				<div class="card-footer">
-					<a href="#" class="btn btn-outline-primary">
-						Contactenos	
-					</a>
+					<a href="#contacto" class="btn btn-outline-primary btn-sm">Contáctenos	</a>
 				</div>
 			</div>
-			<div class="col card h-100 border-0 p-1">
+			<div class="col card h-100 border-0 p-2">
 				<img src="assets/img/servicios-3.jpg" class="card-img-top figure-img img-fluid" alt="...">
 				<div class="card-body">
-					<h5 class="card-title">Contabilidad General</h5>
+					<h5 class="card-title fw-bold">Contabilidad General</h5>
 					<p class="card-text">En importación, comunicación y presentación de estructura jurídica y beneficiario finales</p>
 					<p>Asistir a las empresas en la administración de aquellos procesos de negocio no esenciales para el desarrollo organizado de su estrategia, garantizando la calidad, cumplimiento legal y profesionalismo en la prestación del servicio
 					<br>no cometa errores en su comunicación queriendo ahorrar
 					</p>
-				</div>
-				<div class="card-footer">
-					<a href="#" class="btn btn-outline-primary">
-						Contactenos	
-					</a>
+					<a href="#contacto" class="btn btn-outline-primary btn-sm">Contáctenos	</a>
 				</div>
 			</div>
-			<div class="col card h-100 border-0 p-1">
+			<div class="col card h-100 border-0 p-2">
 				<img src="assets/img/servicios-4.jpg" class="card-img-top figure-img img-fluid" alt="...">
 				<div class="card-body">
-					<h5 class="card-title">Peritaje Contable</h5>
+					<h5 class="card-title fw-bold">Peritaje Contable</h5>
 					<p class="card-text">Aportar su experiencia y conocimientos para evaluar y opinar sobre puntos controvertidos relacionados con su empresa, que puede dar lugar a complejos litigios a través de su informe.
 					</p>
-				</div>
-				<div class="card-footer">
-					<a href="#" class="btn btn-outline-primary">
-						Contactenos	
-					</a>
+					<a href="#contacto" class="btn btn-outline-primary btn-sm">Contáctenos	</a>
 				</div>
 			</div>
-			<div class="col card h-100 border-0 p-1">
+			<div class="col card h-100 border-0 p-2">
 				<img src="assets/img/servicios-5.jpg" class="card-img-top figure-img img-fluid" alt="...">
 				<div class="card-body">
-					<h5 class="card-title">Asesoramiento Impositivos y Laborales</h5>
+					<h5 class="card-title fw-bold">Asesoramiento Impositivos y Laborales</h5>
 					<p class="card-text">En impuestos generales, comercio exterior, tributos municipales, contribuciones de seguridad social, leyes especiales, entre otros.</p>
-				</div>
-				<div class="card-footer">
-					<a href="#" class="btn btn-outline-primary">
-						Contactenos	
-					</a>
+					<a href="#contacto" class="btn btn-outline-primary btn-sm">Contáctenos	</a>
 				</div>
 			</div>
-			<div class="col card h-100 border-0 p-1">
+			<div class="col card h-100 border-0 p-2">
 				<img src="assets/img/servicios-6.jpg" class="card-img-top figure-img img-fluid" alt="...">
 				<div class="card-body">
-					<h5 class="card-title">Trámites de Abogacía del Tesoro</h5>
+					<h5 class="card-title fw-bold">Trámites de Abogacía del Tesoro</h5>
 					<p class="card-text">Los principales deberes y atribuciones se encontraban: a) Perseguir el cobro compulsivo de los impuestos; b) Intervenir en los asuntos que conoce el Tribunal de Cuentas en grado de apelación; y c) Representar al Estado en las causas en que esté interesada la renta pública. Asesoramos ante el Ministerio de Hacienda y al Fisco; en forma ágil, eficaz, con transparencia y responsabilidad.</p>
-				</div>
-				<div class="card-footer">
-					<a href="#" class="btn btn-outline-primary">
-						Contactenos	
-					</a>
+					<a href="#contacto" class="btn btn-outline-primary btn-sm">Contáctenos	</a>
 				</div>
 			</div>
 		</div>
-
-		<!-- featured services -->
-		<div class="row py-5">
-	        <div class="col-8 p-4 d-flex flex-column position-static">
-	          <strong class="d-inline-block mb-2 text-primary">Servicio destacado</strong>
-	          <h3 class="mb-0">Auditoría Externa Impositiva</h3>
-	          <!-- <div class="mb-1 text-muted">Nov 12</div> -->
-	          <p class="card-text mb-auto">E informe de aseguramiento ISAE3000R con énfasis  al mejoramiento de la estructura de la empresa.
-			La auditoría externa impositiva es una obligación que tienen algunos contribuyentes, este requerimiento se incluyó en el Art. 33 de la Ley 2421/04 que expresa: “Los contribuyentes con una facturación anual igual o superior a G. 6.000.000.000 (Guaraníes seis mil millones), deberán contar con dictamen impositivo de una auditoría externa, el cual deberá estar reglamentado por la Subsecretaría de Estado de Tributación.</p>
-	          <a href="#" class="stretched-link">Contáctenos</a>
-	        </div>
-	        <div class="col-auto d-none d-lg-block">
-	          <img src="assets/img/servicios-7.jpg" class="img-fluid rounded float-end" width="350" height="426" alt="...">
-	        </div>
-	    </div>
-
-	    <div class="row py-5">
-	        <div class="col-auto ">
-	          <img src="assets/img/servicios-8.jpg" class="img-fluid rounded float-end" width="350" height="426" alt="...">
-	        </div>
-	        <div class="col-8 p-4 d-flex flex-column position-static">
-	          <strong class="d-inline-block mb-2 text-primary">Servicio destacado</strong>
-	          <h3 class="mb-0">Contabilidad Agrícola y Ganadera</h3>
-	          <!-- <div class="mb-1 text-muted">Nov 12</div> -->
-	          <p class="card-text mb-auto">Con aplicación de la NIC41, servicios laborales IPS y MTSS.
-				Todo sector agropecuario debe hacer uso de la contabilidad, cualquiera que sea la importancia de su explotación. Nuestro servicio está orientado hacia la especialización del control, análisis,y presentación, de todas y cada una de las partidas de los costos requeridos, para el cultivo del agro y la cría de los ganados.</p>
-	          <a href="#" class="stretched-link">Contáctenos</a>
-	        </div>
-	    </div>
-
 	</section>
 
-	<!-- customers -->
-	<div class="container py-5">
-		<h2 class="pb-2 border-bottom">Clientes</h2>
-		<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-1.png" alt=""></div>
-			</div>
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-2.png" alt=""></div>
-			</div>
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-3.png" alt=""></div>
-			</div>
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-4.png" alt=""></div>
-			</div>
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-3.png" alt=""></div>
-			</div>
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-2.png" alt=""></div>
-			</div>
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-1.png" alt=""></div>
-			</div>
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-2.png" alt=""></div>
-			</div>
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-3.png" alt=""></div>
-			</div>
-			<div class="col">
-			<div class="p-3 border bg-light text-center"><img src="assets/img/cliente-4.png" alt=""></div>
+	<!-- featured services -->
+	<article class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-8 p-4 d-flex flex-column position-static">
+					<strong class="d-inline-block mb-2 text-primary">Servicio destacado</strong>
+					<h3 class="mb-0 pb-3 fw-bold">Auditoría Externa Impositiva</h3>
+					<!-- <div class="mb-1 text-muted">Nov 12</div> -->
+					<p class="card-text mb-auto">E informe de aseguramiento ISAE3000R con énfasis  al mejoramiento de la estructura de la empresa.
+					La auditoría externa impositiva es una obligación que tienen algunos contribuyentes, este requerimiento se incluyó en el Art. 33 de la Ley 2421/04 que expresa: “Los contribuyentes con una facturación anual igual o superior a G. 6.000.000.000 (Guaraníes seis mil millones), deberán contar con dictamen impositivo de una auditoría externa, el cual deberá estar reglamentado por la Subsecretaría de Estado de Tributación.</p>
+				</div>
+				<div class="col-auto">
+					<img src="assets/img/servicios-7.jpg" class="img-fluid rounded float-end" width="350" height="426" alt="...">
+				</div>
 			</div>
 		</div>
-	</div>
+	</article>
+
+	<article class="py-5 featured-services">
+		<div class="container">
+			<div class="row">
+				<div class="col-auto">
+					<img src="assets/img/servicios-8.jpg" class="img-fluid rounded float-end" width="350" height="426" alt="...">
+				</div>
+				<div class="col-8 p-4 d-flex flex-column position-static">
+					<strong class="d-inline-block mb-2 text-primary">Servicio destacado</strong>
+					<h3 class="mb-0 pb-3 fw-bold">Contabilidad Agrícola y Ganadera</h3>
+					<!-- <div class="mb-1 text-muted">Nov 12</div> -->
+					<p class="card-text mb-auto">Con aplicación de la NIC41, servicios laborales IPS y MTSS.
+					Todo sector agropecuario debe hacer uso de la contabilidad, cualquiera que sea la importancia de su explotación. Nuestro servicio está orientado hacia la especialización del control, análisis,y presentación, de todas y cada una de las partidas de los costos requeridos, para el cultivo del agro y la cría de los ganados.</p>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<!-- customers -->
+	<section id="clientes" class="container py-5 text-center">
+		<h2 class="py-5">Clientes</h2>
+		<p>Nos sentimos honrados en trabajar con estas destacadas empresas</p>
+		<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-1.png" alt=""></div>
+			</div>
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-2.png" alt=""></div>
+			</div>
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-3.png" alt=""></div>
+			</div>
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-4.png" alt=""></div>
+			</div>
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-3.png" alt=""></div>
+			</div>
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-2.png" alt=""></div>
+			</div>
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-1.png" alt=""></div>
+			</div>
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-2.png" alt=""></div>
+			</div>
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-3.png" alt=""></div>
+			</div>
+			<div class="col">
+			<div class="p-3 border bg-light"><img src="assets/img/cliente-4.png" alt=""></div>
+			</div>
+		</div>
+	</section>
 
 	<!-- testimonials -->
-	<section class="bg-primary">
+	<section class="testimonials text-white">
 		<div class="container py-5">
 			<!-- Carousel -->
 			<div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -237,8 +224,8 @@
 	</section>
 
 	<!-- contact -->
-	<div class="container py-5">
-		<h2 class="pb-2 border-bottom">Contacto</h2>
+	<section id="contacto" class="container py-5">
+		<h2 class="py-5 text-center">Contacto</h2>
 		<div class="row">
 			<div class="col-sm-6">
 				<p>Dejanos un mensaje y nos contactamos en menos de 24 hs</p>
@@ -300,7 +287,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!-- footer -->
 	<div class="container pt-5">
