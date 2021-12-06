@@ -46,7 +46,9 @@ header a span{
     border:1px solid var(--ays-primary);
     color: var(--ays-primary);
 }
-
+.featured-services{
+    background-color: #eee;
+}
 .testimonials{
     background-color: var(--ays-primary-dark);
 }
